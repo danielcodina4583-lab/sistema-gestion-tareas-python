@@ -184,6 +184,7 @@ El proyecto incluye tres diagramas UML que explican visualmente el sistema:
 El sistema implementa diversos mecanismos de validación para asegurar la consistencia, la integridad de los datos y el correcto funcionamiento del flujo de tareas.
 
 ### Aspectos Verificados Cumplidos en el proyecto
+
 - Validación de fechas límite para evitar fechas pasadas.  
 - Verificación de campos obligatorios como el título de la tarea.  
 - Control de identificadores únicos para cada tarea.  
@@ -191,5 +192,55 @@ El sistema implementa diversos mecanismos de validación para asegurar la consis
 - Integridad de datos en operaciones de persistencia.  
 - Correcto funcionamiento de las estrategias de priorización.
 
+##  Pruebas Unitarias Implementadas
 
-**Proyecto Académico - Materia Diseño De Software - Ingeniería de Software**
+Las pruebas unitarias se encuentran organizadas en la carpeta `tests/`, cubriendo todos los módulos principales del sistema.  
+
+El archivo central es **`test_completo.py`**, que integra y ejecuta la suite completa.
+
+###  Estructura y Alcance
+
+El conjunto de pruebas valida:
+
+- El modelo **Tarea**
+- El **GestorTareas**
+- Las estrategias de **priorización**
+- La **persistencia de datos**
+- Funciones avanzadas como **filtros**, **búsqueda** y **ordenamiento**
+
+Todas las operaciones críticas del sistema han sido verificadas mediante tests automatizados.
+
+###  Cobertura Detallada
+
+#### **Modelo Tarea**
+- Validación de atributos
+- Cambios de estado
+- Comportamientos internos
+
+#### **GestorTareas**
+- CRUD completo (crear, leer, actualizar, eliminar)
+- Control de estados
+- Búsqueda
+- Detección de tareas vencidas
+
+###  Estrategias de Prioridad Probadas
+
+| Estrategia      | Pruebas Implementadas |
+|-----------------|-----------------------|
+| Por fecha       | Verificación de cercanía de fechas límite |
+| Por categoría   | Validación según el tipo de tarea (trabajo, estudio, universidad, etc.) |
+| Manual          | Confirmación de la prioridad asignada por el usuario |
+
+###  Persistencia en JSON
+- Guardado y recuperación de tareas
+- Verificación de integridad y consistencia
+
+###  Filtros y Ordenamiento
+Pruebas de funcionamiento combinando:
+
+- Búsqueda por texto
+- Filtrado por estado
+- Ordenamiento por prioridad
+- Filtrado por fecha
+
+Proyecto Académico - Materia Diseño De Software - Ingeniería de Software
