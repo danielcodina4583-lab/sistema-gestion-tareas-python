@@ -15,5 +15,5 @@ class PrioridadCategoriaStrategy(PrioridadStrategy):
         else:
             return Prioridad.BAJA
     
-    def get_nombre(self) -> str:
-        return "Prioridad por Categoría"
+    def get_nombre(self) -> str:  
+        return "Estrategia por Categoría"

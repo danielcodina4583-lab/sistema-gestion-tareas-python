@@ -5,5 +5,5 @@ class PrioridadManualStrategy(PrioridadStrategy):
     def calcular_prioridad(self, tarea: Tarea) -> Prioridad:
         return tarea.prioridad if tarea.prioridad else Prioridad.MEDIA
     
-    def get_nombre(self) -> str:
-        return "Prioridad Manual"
+    def get_nombre(self) -> str:  
+        return "Estrategia Manual"

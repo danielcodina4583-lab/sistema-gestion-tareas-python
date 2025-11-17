@@ -1,0 +1,3 @@
+id,titulo,descripcion,categoria,fecha_limite,estado,prioridad,fecha_creacion,fecha_actualizacion
+1,tarea de fisica,Campo electrico,universidad,2025-11-22T00:00:00,completada,alta,2025-11-16T19:56:58.920974,2025-11-16T19:59:11.594919
+2,pasear al perro,sacarlo,baja,2025-11-12T00:00:00,completada,baja,2025-11-16T20:00:50.028900,2025-11-16T20:01:03.909620
